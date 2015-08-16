@@ -1,17 +1,13 @@
-<<<<<<< HEAD
 ---
 output:
   html_document:
     keep_md: yes
 ---
-=======
->>>>>>> 66b47c27e1cced9339a1c68190ce94cbf20b5269
 # Reproducible Research: Peer Assessment 1
 ```{r format_date, echo = FALSE}
 today <- format(Sys.Date(), format="%B %d, %Y")
 ```
 Prepared by Rebecca Ziebell on `r today`
-<<<<<<< HEAD
 
 ## Loading and preprocessing the data
 
@@ -406,4 +402,3 @@ xyplot(avg_steps_imp ~ interval | week_part, data = avg_steps_imp, type = "l",
        scales = list(y = list(alternating = FALSE)),
        main = "Time-Series Plot #2", layout = c(1, 2))
 ```
->>>>>>> 66b47c27e1cced9339a1c68190ce94cbf20b5269
