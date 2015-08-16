@@ -32,7 +32,7 @@ str(activity)
 
 Install dplyr and lattice packages for later use.
 
-```{r packages , echo = TRUE, message = FALSE}
+```{r packages , echo = TRUE, message = FALSE, results = "hide"}
 pkg_list <- c("dplyr", "lattice")
 
 pkg_inst <- pkg_list %in% installed.packages()

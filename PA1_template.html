@@ -92,11 +92,6 @@ pkg_inst &lt;- pkg_list %in% installed.packages()
 if(length(pkg_list[!pkg_inst]) &gt; 0) install.packages(pkg_list[!pkg_inst])
 
 lapply(pkg_list, require, character.only = TRUE)</code></pre>
-<pre><code>## [[1]]
-## [1] TRUE
-## 
-## [[2]]
-## [1] TRUE</code></pre>
 </div>
 <div id="what-is-the-total-number-of-steps-taken-per-day" class="section level2">
 <h2>What is the total number of steps taken per day?</h2>

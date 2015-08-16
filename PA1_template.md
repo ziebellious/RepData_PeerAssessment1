@@ -44,14 +44,6 @@ if(length(pkg_list[!pkg_inst]) > 0) install.packages(pkg_list[!pkg_inst])
 lapply(pkg_list, require, character.only = TRUE)
 ```
 
-```
-## [[1]]
-## [1] TRUE
-## 
-## [[2]]
-## [1] TRUE
-```
-
 ## What is the total number of steps taken per day?
 
 1\. Calculate the total number of steps taken per day.
