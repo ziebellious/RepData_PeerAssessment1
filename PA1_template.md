@@ -217,7 +217,7 @@ head(act_imp)
 ```r
 tot_steps_imp <- act_imp %>%
   group_by(date) %>%
-  summarize(tot_steps_imp = sum(steps_imp, na.rm = TRUE))
+  summarize(tot_steps_imp = sum(steps_imp))
 
 with(tot_steps_imp, hist(tot_steps_imp, col="Blue", 
                          xlab="Total Steps per Day (Imputed)",
@@ -262,7 +262,10 @@ mean_med_diff
 ## 1        351.0082              0
 ```
 
-*Impact: Average daily steps increases by 351; median daily steps is unchanged.*
+
+
+*Impact: Average daily steps increases by 351.0081967; median daily steps 
+increases by 0.
 
 ## Are there differences in activity patterns between weekdays and weekends?
 

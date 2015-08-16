@@ -143,7 +143,7 @@ head(act_imp)
 ``` {r hist_imp, echo = TRUE}
 tot_steps_imp <- act_imp %>%
   group_by(date) %>%
-  summarize(tot_steps_imp = sum(steps_imp, na.rm = TRUE))
+  summarize(tot_steps_imp = sum(steps_imp))
 
 with(tot_steps_imp, hist(tot_steps_imp, col="Blue", 
                          xlab="Total Steps per Day (Imputed)",
@@ -172,7 +172,14 @@ names(mean_med_diff) <- c("mean_steps_diff", "med_steps_diff")
 mean_med_diff
 ```
 
-*Impact: Average daily steps increases by 351; median daily steps is unchanged.*
+``` {r mean_med_display, echo = FALSE}
+mean_diff <- mean_med_diff$mean_steps_diff
+
+med_diff <- mean_med_diff$med_steps_diff
+```
+
+*Impact: Average daily steps increases by `r mean_diff`; median daily steps 
+increases by `r med_diff`.
 
 ## Are there differences in activity patterns between weekdays and weekends?
 
