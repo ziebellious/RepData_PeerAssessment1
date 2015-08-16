@@ -257,7 +257,7 @@ mean_med_diff
 
 
 *Impact: Average daily steps increases by 351.0081967; median daily steps 
-increases by 0.
+increases by 0.*
 
 ## Are there differences in activity patterns between weekdays and weekends?
 

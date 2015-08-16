@@ -179,7 +179,7 @@ med_diff <- mean_med_diff$med_steps_diff
 ```
 
 *Impact: Average daily steps increases by `r mean_diff`; median daily steps 
-increases by `r med_diff`.
+increases by `r med_diff`.*
 
 ## Are there differences in activity patterns between weekdays and weekends?
 
