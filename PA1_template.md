@@ -1,6 +1,5 @@
 # Reproducible Research: Peer Assessment 1
 Rebecca Ziebell  
-`r format(Sys.Date(), format="%d %B %Y")`  
 
 ## Loading and preprocessing the data
 
@@ -222,7 +221,8 @@ with(tot_steps_imp, hist(tot_steps_imp, col = "Blue",
 
 ![](PA1_template_files/figure-html/hist_imp-1.png) 
 
-**4 (cont.) Calculate the mean and median total number of steps taken per day.**
+**4\. (cont'd) Calculate the mean and median total number of steps taken per**
+**day.**
 
 
 ```r
@@ -236,7 +236,7 @@ Mean total steps/day (after imputation):
 Median total steps/day (after imputation): 
 11,015
 
-**4 (cont.) Do these values differ from the estimates from the first part**
+**4\. (cont'd) Do these values differ from the estimates from the first part**
 **of the assignment? What is the impact of imputing missing data on the**
 **estimates of the total daily number of steps?**
 

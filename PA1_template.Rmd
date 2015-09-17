@@ -1,7 +1,6 @@
 ---
 title: 'Reproducible Research: Peer Assessment 1'
 author: "Rebecca Ziebell"
-date: '`r format(Sys.Date(), format="%d %B %Y")`'
 output:
   html_document:
     highlight: haddock
@@ -164,7 +163,8 @@ with(tot_steps_imp, hist(tot_steps_imp, col = "Blue",
                          main = "Histogram #2"))
 ```
 
-**4 (cont.) Calculate the mean and median total number of steps taken per day.**
+**4\. (cont'd) Calculate the mean and median total number of steps taken per**
+**day.**
 
 ``` {r mean_med_imp, echo = TRUE}
 mean_tot_imp <- mean(tot_steps_imp$tot_steps_imp)
@@ -177,7 +177,7 @@ Mean total steps/day (after imputation):
 Median total steps/day (after imputation): 
 `r format(med_tot_imp, big.mark = ",", scientific = FALSE)`
 
-**4 (cont.) Do these values differ from the estimates from the first part**
+**4\. (cont'd) Do these values differ from the estimates from the first part**
 **of the assignment? What is the impact of imputing missing data on the**
 **estimates of the total daily number of steps?**
 
